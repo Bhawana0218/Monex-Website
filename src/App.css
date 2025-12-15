@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+#cta {
+  scroll-margin-top: 80px;
+}
