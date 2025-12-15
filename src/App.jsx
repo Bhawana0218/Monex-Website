@@ -12,9 +12,10 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div>
+      <Router>
       <Toaster richColors position="top-right" />
       <Navbar></Navbar>
-      <Router>
+      
         <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>

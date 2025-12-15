@@ -1,6 +1,7 @@
 import {React, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X} from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Monex from '/src/assets/Monex-logo2.png';
 
 const Navbar = () =>{
@@ -31,11 +32,11 @@ const Navbar = () =>{
                         </motion.div>
             
                         <div className="hidden md:flex items-center space-x-8">
-                          <a href="home" className="hover:text-blue-400 transition-colors">Home</a>
-                          <a href="services" className="hover:text-blue-400 transition-colors">Services</a>
-                          <a href="tools" className="hover:text-blue-400 transition-colors">Tools</a>
-                          <a href="about" className="hover:text-blue-400 transition-colors">About</a>
-                          <a href="contact" className="hover:text-blue-400 transition-colors">Contact</a>
+                          <Link to="/" className="hover:text-blue-400 transition-colors">Home</Link>
+                          <Link to="/services" className="hover:text-blue-400 transition-colors">Services</Link>
+                          <Link to="/tools" className="hover:text-blue-400 transition-colors">Tools</Link>
+                          <Link to="/about" className="hover:text-blue-400 transition-colors">About</Link>
+                          <Link to="/contact" className="hover:text-blue-400 transition-colors">Contact</Link>
                           <button onClick={scrollToCTA}
                           className="bg-linear-to-r from-blue-600 to-cyan-600 px-6 font-semibold py-2 rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all"
                           > Get Started </button>
@@ -57,11 +58,11 @@ const Navbar = () =>{
                         className="md:hidden bg-gray-800 border-t border-blue-800"
                       >
                         <div className="px-4 py-4 space-y-4">
-                          <a href="home" className="block hover:text-blue-400">Home</a>
-                          <a href="services" className="block hover:text-blue-400">Services</a>
-                          <a href="tools" className="block hover:text-blue-400">Tools</a>
-                          <a href="about" className="block hover:text-blue-400">About</a>
-                          <a href="contact" className="block hover:text-blue-400">Contact</a>
+                           <Link to="/" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Home</Link>
+                          <Link to="/services" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Services</Link>
+                          <Link to="/tools" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Tools</Link>
+                          <Link to="/about" className="block hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>About</Link>
+                          <Link to="/contact" className="block hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                           <button onClick={scrollToCTA}
                            className="w-full bg-linear-to-r from-blue-600 to-cyan-600 px-6 py-2 rounded-lg">
                              Get Started  </button>
