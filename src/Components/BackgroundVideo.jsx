@@ -33,7 +33,7 @@ const BackgroundVideo = () => {
       loop
       playsInline
       preload="metadata"
-      className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
+      className="absolute inset-0 w-full h-full object-cover opacity-80 -z-10"
     >
       <source
         src={Video}

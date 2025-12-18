@@ -33,6 +33,7 @@ const Navbar = () =>{
             
                         <div className="hidden md:flex items-center space-x-8">
                           <Link to="/" className="hover:text-blue-400 transition-colors">Home</Link>
+                          <Link to="/calculator" className="hover:text-blue-400 transition-colors">Calculator</Link>
                           <Link to="/services" className="hover:text-blue-400 transition-colors">Services</Link>
                           <Link to="/tools" className="hover:text-blue-400 transition-colors">Tools</Link>
                           <Link to="/about" className="hover:text-blue-400 transition-colors">About</Link>
@@ -59,6 +60,7 @@ const Navbar = () =>{
                       >
                         <div className="px-4 py-4 space-y-4">
                            <Link to="/" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Home</Link>
+                           <Link to="/calculator" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Calculator</Link>
                           <Link to="/services" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Services</Link>
                           <Link to="/tools" className="block hover:text-blue-400"  onClick={() => setIsMenuOpen(false)}>Tools</Link>
                           <Link to="/about" className="block hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>About</Link>
