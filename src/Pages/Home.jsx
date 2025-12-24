@@ -136,8 +136,6 @@ const Home = () => {
   }}>
   <div className="absolute inset-0 bg-linear-to-t from-cyan-950/90 via-black/40 to-black/90 pointer-events-none" />
 
-  {/* Background Glow */}
-  <div className="absolute inset-0 -z-10 bg-linear-to-r from-blue-900/10 via-transparent to-cyan-900/10 pointer-events-none" />
 
   <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -189,7 +187,7 @@ const Home = () => {
             hover:-translate-y-2
             hover:shadow-xl hover:shadow-blue-500/20 min-h-55 flex flex-col" >
           {/* Card Glow */}
-          <div className="absolute inset-0 rounded-2xl bg-linear-to-r from-blue-500/60 to-cyan-500/70 opacity-0 group-hover:opacity-60 transition-opacity" />
+          <div className="absolute inset-0 rounded-2xl bg-linear-to-r from-blue-500/60 to-cyan-500/60 opacity-0 group-hover:opacity-60 transition-opacity" />
           <div className="relative z-10">
             <div className="text-cyan-400 text-2xl mb-4">
               {feature.icon}

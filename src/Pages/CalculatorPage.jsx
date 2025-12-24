@@ -174,21 +174,22 @@ const CalculatorPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-900 via-indigo-900 to-gray-900 text-white">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-indigo-900 to-gray-900 text-white" >
       {/* Header */}
-      <div className="relative overflow-hidden bg-linear-to-r from-gray-900 via-indigo-900 to-gray-900 py-16">
+      <div className="relative overflow-hidden bg-linear-to-r from-gray-900 via-indigo-900 to-gray-900 py-16 bg-cover bg-center" 
+      style={{ backgroundImage: "url('https://wallpaperaccess.com/full/1199206.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="flex items-center justify-center mb-6">
-            <h1 className="text-5xl mt-2 font-extrabold">
+            <h1 className="text-5xl mt-2 font-extrabold backdrop-blur-sm">
               Monex <span className="text-cyan-500">Calculator</span>
             </h1>
           </motion.div>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto -mb-4">
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto -mb-4 backdrop-blur-sm">
             Your comprehensive financial companion for smart loan decisions and investment planning
           </p>
         </div>

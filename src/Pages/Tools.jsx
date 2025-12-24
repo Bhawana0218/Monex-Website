@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 import {Calculator,TrendingUp, PieChart, IndianRupee,  BarChart3, Shield, Search, ChevronRight,} from 'lucide-react';
@@ -136,7 +136,7 @@ const Tools = () => {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-4 py-3 bg-white/25 border border-white/10 rounded-lg text-white focus:outline-none focus:border-cyan-400"
+              className="px-4 py-3 bg-white/25 border border-white/10 rounded-lg text-gray-300 focus:outline-none focus:border-cyan-400"
             >
               <option value="all">All Categories</option>
               <option value="planning">Planning</option>

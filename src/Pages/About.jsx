@@ -81,7 +81,7 @@ const About = () => {
             </div>
 
             {/* Trust Highlights */}
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-3 gap-4">
               <div className="bg-gray-900 border border-blue-800 rounded-xl p-5">
                 <ShieldCheck className="text-cyan-400 mb-3" />
                 <h4 className="font-semibold text-xl text-white mb-1">Secure by Design</h4>
