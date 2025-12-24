@@ -179,7 +179,7 @@ const CalculatorPage = () => {
       <div className="relative overflow-hidden bg-linear-to-r from-gray-900 via-indigo-900 to-gray-900 py-16 bg-cover bg-center" 
       style={{ backgroundImage: "url('https://wallpaperaccess.com/full/1199206.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
